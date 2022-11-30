@@ -1,4 +1,4 @@
- "before all"  hook:
+ "before all",  hook, 'in'; 
  function Monday() {
     console.log("Go for a five-mile run");
     console.log("Pump iron");
@@ -71,6 +71,7 @@
 // LOG: Pump iron
 
 afterExercise;
-//=> ƒ () { console.log(`Nom nom nom, this ${breakfast} is delicious!`); }
+
+console.log(`Nom nom nom, this ${breakfast} is delicious!`); 
 afterExercise();
 // LOG: Nom nom nom, this protein bar is delicious!
